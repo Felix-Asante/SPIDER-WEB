@@ -1,0 +1,25 @@
+// shared Grid Layout
+%grid-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    @media screen and (max-width:861px) {
+        grid-template-columns: repeat(2,1fr);
+        
+     }
+    @media screen and (max-width:603px) {
+        grid-template-columns: 1fr;
+        margin: auto 2rem;
+        
+     }
+     @media screen and (max-width:500px) {
+       margin:0;
+    }
+}
+
+// flex-box mixin
+@mixin flex($direction,$justify,$align) {
+    display:  flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

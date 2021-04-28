@@ -1,0 +1,82 @@
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import 'layout';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.1;
+    overflow-x: hidden;
+}
+
+// colors Variable
+$primary-color:#18a98c;
+$bg-color:#f9f9f9;
+$dark-color:#060606;
+$gray-color:#f7f7f7;
+$white:#ffff;
+
+// ultility classes
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: $dark-color;
+}
+
+h2{
+    font-size: 80px;
+    font-weight: bolder;
+}
+
+h3{
+    font-size: 26px;
+}
+h4{
+    font-size: 18px;
+}
+.btn{
+  border-radius: 30px;
+  padding: 14px 33px;
+}
+
+.btn-green{
+ background: $primary-color;
+ color: $white;
+}
+
+.green-text{
+    color: $primary-color;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 1.5rem;
+
+}
+
+.section-header{
+    @include flex(column,center,center);
+}
+
+@media screen and (max-width:665px) {
+    .section-subtitle {
+        text-align: center;
+    }    
+}
+
+   @media screen and (max-width:370px){
+       h2{
+           font-size: 30px;
+       }
+   }
