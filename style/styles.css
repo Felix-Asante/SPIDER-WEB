@@ -1101,7 +1101,7 @@ h4 {
   margin-top: 5rem;
   width: 100vw;
   height: 100vh;
-  background: url("/img/subscribe-bg.jpg") no-repeat center center/cover;
+  background: url("../img/subscribe-bg.jpg") no-repeat center center/cover;
   background-attachment: fixed;
   position: relative;
   z-index: 5;
