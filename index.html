@@ -20,42 +20,42 @@
   
   <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-md fixed-top scrolling-navbar bg-white">
+    <nav class="navbar navbar-expand-md fixed-top scrollspy-nav bg-white">
         <div class="container">          
           <a class="navbar-brand green-text" href="index.html">SPIDER WEB</a>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#slider-area">Home</a>
+                <a class="nav-link scrollspy-link" data-target="slider-area" href="#slider-area">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#services">Services</a>
+                <a class="nav-link scrollspy-link" data-target="services" href="#services">Services</a>
               </li>  
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#features">Features</a>
+                <a class="nav-link scrollspy-link" data-target="features" href="#features">Features</a>
               </li>                            
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#portfolios">Works</a>
+                <a class="nav-link scrollspy-link" data-target="portfolios" href="#portfolios">Works</a>
               </li>             
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#team">Team</a>
+                <a class="nav-link scrollspy-link" data-target="team" href="#team">Team</a>
               </li>    
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#subscribe">Subscribe</a>
+                <a class="nav-link scrollspy-link" data-target="subscribe" href="#subscribe">Subscribe</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
+                <a class="nav-link scrollspy-link"  data-target="contact" href="#contact">Contact</a>
               </li> 
-
+              <span class="scrollspy-indicator"></span>
             </ul>              
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"  aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
               <i class="fas fa-bars"></i>
             </button>
           </div>
         </div>
       </nav> 
     <!-- Header Section Start -->
-    <header id="slider-area">  
+    <header id="slider-area" class="scrollspy-section">  
       <div id="showcase-area">
           <div class="showcase-inner" role="listbox">
             <video src="./videos/pexels-kampus-production-5940168.mp4" autoplay muted loop></video>
@@ -74,7 +74,7 @@
     <!-- Header Section End --> 
 
     <!-- Services Section Start -->
-    <section id="services" class="section">
+    <section id="services" class="section scrollspy-section">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Our Services</h2>
@@ -152,7 +152,7 @@
     <!-- Call to Action End -->
 
     <!-- Features Section Start -->
-    <section id="features" class="section">
+    <section id="features" class="section scrollspy-section">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Why Choose Us</h2>
@@ -259,7 +259,7 @@
     <!-- End Video Promo Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolios" class="section">
+    <section id="portfolios" class="section scrollspy-section">
       <!-- Container Starts -->
       <div class="container">
         <div class="section-header">          
@@ -364,76 +364,6 @@
     </section>
     <!-- Portfolio Section Ends --> 
 
-    <!-- Start Pricing Table Section -->
-    <!-- <div id="pricing" class="section pricing-section">
-      <div class="container">
-        <div class="section-header">          
-          <h2 class="section-title">Pricing Plans</h2>
-          <span>Pricing</span>
-          <p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos debitis.</p>
-        </div>
-
-        <div class="row pricing-tables">
-          <div class="col-lg-4 col-md-4 col-xs-12">
-            <div class="pricing-table">
-              <div class="pricing-details">
-                <h2>Starter Plan</h2>
-                <div class="price">49$ <span>/mo</span></div>
-                <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                  <li> - </li>
-                </ul>
-              </div>
-              <div class="plan-button">
-                <a href="#" class="btn btn-common btn-effect">Get Plan</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-12">
-            <div class="pricing-table pricing-big">
-              <div class="pricing-details">
-                <h2>Popular Plan</h2>
-                <div class="price">99$ <span>/mo</span></div>
-                <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                  <li> - </li>
-                </ul>
-              </div>
-              <div class="plan-button">
-                <a href="#" class="btn btn-common btn-effect">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-4 col-xs-12">
-            <div class="pricing-table">
-              <div class="pricing-details">
-                <h2>Premium Plan</h2>
-                <div class="price">199$ <span>/mo</span></div>
-                <ul>
-                  <li>Consectetur adipiscing</li>
-                  <li>Nunc luctus nulla et tellus</li>
-                  <li>Suspendisse quis metus</li>
-                  <li>Vestibul varius fermentum erat</li>
-                  <li>Suspendisse quis metus</li>
-                </ul>
-              </div>
-              <div class="plan-button">
-                <a href="#" class="btn btn-common btn-effect">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
     <!-- End Pricing Table Section -->
 
     <!-- Counter Section Start -->
@@ -490,7 +420,7 @@
     <!-- Counter Section End -->
 
     <!-- Testimonial Section Start -->
-    <section class="testimonial section">
+    <section class="testimonial section scrollspy-section" id="testimonials">
       <!-- <div class="container"> -->
         <div class="row">
           <div class="section-header">
@@ -604,7 +534,7 @@
     <!-- Testimonial Section End --> 
 
     <!-- Team section Start -->
-    <section id="team" class="section">
+    <section id="team" class="section scrollspy-section">
       <div class="container">
         <div class="section-header">          
           <h2 class="section-title">Our Team</h2>
@@ -683,7 +613,7 @@
 
 
     <!-- Subcribe Section Start -->
-    <div id="subscribe" class="section">
+    <div id="subscribe" class="section scrollspy-section">
       <div class="container">
         <div class="flex-row justify-content-between">
           <div class="sub-form">
@@ -778,7 +708,7 @@
     <!-- Client Section End --> 
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section">      
+    <section id="contact" class="section scrollspy-section">      
       <div class="contact-form">
         <div class="container">
           <div class="section-header">          
@@ -891,6 +821,7 @@
      <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
      <script src="./js/owl.carousel.min.js"></script>
      <script src="./js/carousel.js"></script>
+     <script src="./js/scrollspy.min.js"></script>
      <script src="./js/responsive.js"></script>
     </body>
 </html>
